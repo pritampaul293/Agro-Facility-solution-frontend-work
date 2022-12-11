@@ -45,7 +45,7 @@ const DashProfile = (props) => {
         </p>
         <p>Email: {userDetails.email}</p>
         <p>Phone: {userDetails.mobile}</p>
-        <p>NidNo: {userDetails.nidNo}</p>
+        {/* <p>NidNo: {userDetails.nidNo}</p> */}
         <p style={{ marginBottom: "0.5rem" }}>
           Location : {userDetails.location}
         </p>

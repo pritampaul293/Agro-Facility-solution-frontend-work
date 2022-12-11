@@ -31,7 +31,7 @@ const SignUp = () => {
       data.email === "" ||
       data.password === "" ||
       data.mobile === "" ||
-      data.nidNo === "" ||
+      // data.nidNo === "" ||
       data.remember === ""
     ) {
       setError(true);
@@ -47,7 +47,7 @@ const SignUp = () => {
           data.displayName,
           data.mobile,
           data.location,
-          data.nidNo,
+          // data.nidNo,
           "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
         );
         setUser({
@@ -56,7 +56,7 @@ const SignUp = () => {
           displayName: data.displayName,
           mobile: data.mobile,
           location: data.location,
-          nidNo: data.nidNo,
+          // nidNo: data.nidNo,
           imgUrl:
             "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
         });
@@ -130,7 +130,7 @@ const SignUp = () => {
                     placeholder="Enter your location"
                   />
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                   <label className="loginText">Nid NO</label>
                   <input
                     style={{ borderRadius: "20px" }}
@@ -139,7 +139,7 @@ const SignUp = () => {
                     className="form-control"
                     placeholder="Enter your Nid number"
                   />
-                </div>
+                </div> */}
                 <div className="form-group">
                   <label className="loginText">Password</label>
                   <input

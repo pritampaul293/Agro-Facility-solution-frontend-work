@@ -30,8 +30,8 @@ const useFirebase = () => {
   };
 
   // save user details for after register
-  const saveUser = (email, displayName, mobile, location, nidNo, imgUrl) => {
-    const user = { email, displayName, mobile, location, nidNo, imgUrl };
+  const saveUser = (email, displayName, mobile, location, imgUrl) => { // nidNo,
+    const user = { email, displayName, mobile, location,  imgUrl };//nidNo,
     console.log(user);
     fetch("http://localhost:5000/users", {
       method: "POST",
